@@ -1,1 +1,15 @@
 // For all the @Font-face queries, try to avoid too many
+// web fonts comes with performance implications
+
+// https://fonts.google.com
+
+// Heading elements (h1-h6) should be defined as top-level styles
+
+ @font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+    }
+
+h1 {
+  font-family: "Bitstream Vera Serif Bold", serif;
+}
