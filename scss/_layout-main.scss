@@ -1,3 +1,21 @@
 //Should use grid to style #header, #main and #footer
 //Flexbox for the items in #main? 
+
+#header, #article, #footer {
+    width: 960px;
+    margin: auto;
+}
+
+#article {
+    border: solid #CCC;
+    border-width: 1px 0 0;
+}
+
 //Use @Media queries
+//@media not|only mediatype and (mediafeature and|or|not mediafeature) {}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
