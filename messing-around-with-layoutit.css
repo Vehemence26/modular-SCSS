@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 1fr 40%;
+  grid-template-rows: 30% 1fr;
+  grid-template-areas: "sidebar main untitled" "sidebar content content";
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "main-logo mainnav";
+  grid-area: main;
+}
+
+.main-logo { grid-area: main-logo; }
+
+.mainnav { grid-area: mainnav; }
+
+.sidebar { grid-area: sidebar; }
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "contentmain content-side";
+  grid-area: content;
+}
+
+.content-side { grid-area: content-side; }
+
+.contentmain { grid-area: contentmain; }
+
+.untitled { grid-area: untitled; }
+
+/* HTML
+<div class="grid-container">
+  <div class="main">
+    <div class="main-logo"></div>
+    <div class="mainnav"></div>
+  </div>
+  <div class="sidebar"></div>
+  <div class="content">
+    <div class="content-side"></div>
+    <div class="contentmain"></div>
+  </div>
+  <div class="untitled"></div>
+</div>
+*/
