@@ -11,6 +11,18 @@
     border-width: 1px 0 0;
 }
 
+// CSS Grid generator: https://grid.layoutit.com/
+/* relies on the fact that all HTML is NOT nested eg.
+<div class="grid-container"></div> 
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 1fr 40%;
+  grid-template-rows: 30% 1fr;
+  grid-template-areas: ". . ." ". . .";
+}
+
 //Use @Media queries
 //@media not|only mediatype and (mediafeature and|or|not mediafeature) {}
 
@@ -19,3 +31,4 @@
     background-color: lightblue;
   }
 }
+
