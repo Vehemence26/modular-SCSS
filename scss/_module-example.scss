@@ -1,0 +1,42 @@
+/* http://www.terrifically.org/ for modular web development */
+
+// modules and module subclasses should use classes eg 
+// .module .module-subclass
+
+//State rules for modules
+.tab {
+    background-color: purple;
+    color: white;
+}
+
+.is-tab-active {
+    background-color: white;
+    color: black;
+}
+
+//Defining States with pseudo-classes
+
+.btn {
+    background-color: #333; /* gray */
+}
+
+.btn:hover {
+    background-color: #336; /* blueish */
+}
+
+.btn:focus {
+    /* blueish focus ring */
+    box-shadow: 0 0 3px rgba(48,48,96,.3); 
+}
+
+//Modular Media Queries
+
+/* default state for nav items */
+.nav > li {
+   float: left;
+}
+
+/* alternate state for nav items on small screens */
+@media screen and (max-width: 400px) {
+    .nav > li { float: none; }
+}
