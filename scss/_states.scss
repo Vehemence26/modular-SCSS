@@ -1,2 +1,19 @@
 // contols the Element states
 //eg. is-hidden, is-clicked, is-collapsed, is-error
+
+.is-hidden {
+  display: none;
+}
+
+.is-error {
+  border: 1px solid red;
+}
+
+//Use @Media queries
+//@media not|only mediatype and (mediafeature and|or|not mediafeature) {}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
