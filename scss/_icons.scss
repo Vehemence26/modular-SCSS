@@ -1,2 +1,28 @@
 //Mainly for styling SVGS
-// for icons of Photoshop, Medibang ect.
+
+// HTML - <li><i class="ico ico-16 ico-inbox"></i> Inbox</li> 
+
+.ico {
+    display: inline-block;
+    background: url(/img/sprite.png) no-repeat;
+    line-height: 0;
+    vertical-align: bottom;
+}
+
+.ico-16 {
+    height: 16px;
+    width: 16px;
+}
+
+.ico-inbox {
+    background-position: 20px 20px;
+}
+
+.ico-drafts {
+    background-position: 20px 40px;
+}
+
+/* FONT AWESOME uses these design patterns 
+  link the font awesome CDN in the head and then use
+  <i class="fas fa-address-book"></i> or which ever idon you want in the html.
+*/
